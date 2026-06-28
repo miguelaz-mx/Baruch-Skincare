@@ -1,4 +1,4 @@
-# 🌿 Baruch Skincare
+#  Baruch Skincare
 
 Sitio web oficial de **Baruch Skincare**, un proyecto enfocado en el cuidado de la piel y la estética facial.
 
@@ -15,7 +15,7 @@ El sitio incluye:
 -  Sobre mí
 -  Contacto
 
-## 🛠 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - HTML5
 - CSS3
