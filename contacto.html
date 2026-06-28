@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baruch Skincare | Inicio</title>
+  <title>Baruch Skincare | Contacto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,55 +15,60 @@
       <span class="brand-leaf">BARUCH</span>
       <small>SKINCARE</small>
     </a>
-
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span></span>
       <span></span>
       <span></span>
       <span class="menu-toggle-text">Menú</span>
     </button>
-
     <nav class="nav" id="site-nav" aria-label="Navegación principal">
       <a href="tratamientos.html">Tratamientos</a>
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="resultados.html">Resultados</a>
       <a href="preguntas.html">Preguntas frecuentes</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
     </nav>
-
     <a class="header-action" href="https://wa.me/527751217590" target="_blank" rel="noopener">Agenda tu cita</a>
   </header>
 
-  <main>
-    <section class="hero home-hero" id="inicio">
-      <div class="hero-copy">
-        <h1>Tu piel en las mejores <span>manos</span></h1>
-        <p>
-          Baruch Skincare ofrece tratamientos faciales personalizados para cuidar la salud de tu piel y realzar tu belleza natural.
-        </p>
-
-        <div class="hero-benefits" aria-label="Beneficios principales">
-          <article>
-            <strong>Atención personalizada</strong>
-            <span>Valoración previa</span>
-          </article>
-          <article>
-            <strong>Seguridad y confianza</strong>
-            <span>Proceso claro</span>
-          </article>
-          <article>
-            <strong>Resultados visibles</strong>
-            <span>Plan facial</span>
-          </article>
-        </div>
-
-        <div class="hero-actions">
-          <a class="button primary" href="contacto.html">Agenda tu cita</a>
-          <a class="button secondary" href="tratamientos.html">Conoce los tratamientos</a>
-        </div>
+  <main class="page-main">
+    <section class="contact-strip contact-page">
+      <div>
+        <h1>Agenda tu <span>valoración</span></h1>
+        <p>Da el primer paso hacia una piel más saludable.</p>
+        <a class="button light" href="https://wa.me/527751217590" target="_blank" rel="noopener">Agenda tu cita</a>
       </div>
 
-      <div class="hero-portrait" aria-label="Persona con piel facial cuidada"></div>
+      <div>
+        <h3>Contáctanos</h3>
+        <a href="tel:7751217590">775 121 7590</a>
+        <a href="mailto:luluclau3000@hotmail.com">luluclau3000@hotmail.com</a>
+        <p>Lun - Sáb: 10:00 am - 7:00 pm</p>
+      </div>
+
+      <form class="contact-form">
+        <label>
+          Nombre
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </label>
+        <label>
+          Servicio
+          <select name="servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option>Limpieza facial</option>
+            <option>Tratamiento para acné</option>
+            <option>Hidratación profunda</option>
+            <option>Control de manchas</option>
+            <option>Rejuvenecimiento facial</option>
+          </select>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="3" placeholder="Escribe tu duda"></textarea>
+        </label>
+        <button class="button light" type="submit">Enviar por WhatsApp</button>
+        <p class="form-note" role="status"></p>
+      </form>
     </section>
   </main>
 
@@ -71,6 +76,7 @@
     <span>BARUCH SKINCARE</span>
     <p>© 2026 Baruch Skincare. Todos los derechos reservados.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
